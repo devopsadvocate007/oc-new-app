@@ -6,11 +6,11 @@ on:
     - cron: '0 0 * * *'  # every day at midnight
 
 env:
-  IMAGE_PATH: quay.io/redhat-github-actions/petclinic-private:latest
+  IMAGE_PATH: default-route-openshift-image-registry.apps.sandbox-m2.ll9k.p1.openshiftapps.com/naveen-will-dev/example:petclinic
   APP_NAME: petclinic
   APP_PORT: 8080
   PULL_SECRET_NAME: registry-pull-secret
-  REGISTRY_USERNAME: redhat-github-actions+redhat_actions_ci_puller
+  REGISTRY_USERNAME: naveen-will
 concurrency:
   group: example-private-workflow
   cancel-in-progress: false
