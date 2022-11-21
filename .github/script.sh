@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo su -
 app_name=$1
 image=$2
 namespace=$3
